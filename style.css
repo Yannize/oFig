@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+html {
+  font-family: 'Raleway', sans-serif;
+  background: rgb(53, 53, 53);
+}
+
+body {
+  margin: auto;
+  position: relative;
+}
+
+/************* HEADER *****************/
+
+header h1 {
+  background-color: #C80000;
+  color: white;
+  font-size: 3rem;
+  padding: 25px;
+}
+
+header h1 span {
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+header h2 {
+  background-color: grey;
+  color: white;
+  font-weight: normal;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+header h2 span {
+  font-style: italic;
+  font-size: 2rem;
+}
+
+/************* MAIN *****************/
+main {
+  width: 90%;
+  margin: auto;
+  padding: 30px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.soldes-btn {
+  background: #C80000;
+  width: fit-content;
+  padding: 10px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  border-radius: 0 10px 10px 0;
+  position: fixed;
+  left: 0;
+  top: 300px;
+  color: white;
+  font-weight: bold;
+}
+
+/************* CARDS *****************/
+
+main a {
+  text-decoration: none;
+  color: black;
+}
+
+.cards {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  background: white;
+}
+
+.soldes {
+  background: grey;
+  width: fit-content;
+  padding: 34px 20px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.8rem;
+  border: 7px solid rgb(180, 180, 180);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.cards:hover {
+  box-shadow: none;
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgb(126, 126, 126);
+
+}
+
+.cards header img {
+  width: 100%;
+}
+
+.cards .version {
+  color: rgb(182, 182, 182);
+  font-weight: bold;
+  border-bottom: 3px solid rgb(182, 182, 182);
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.cards .main {
+  padding: 0;
+  margin-bottom: 15px;
+  background: grey;
+}
+
+.cards .title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding-bottom: 40px;
+  background: white;
+}
+
+.cards .content {
+  background: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.cards footer {
+  background: #C80000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 30px;
+  transition: 0.3s;
+}
+
+.cards footer:hover {
+  background: #970000;
+}
+
+.cards footer:hover .btn {
+  color: rgb(255, 255, 141);
+  font-weight: bold;
+}
+
+.cards footer:hover .price {
+  transform: scale(1.2);
+}
+
+.cards .btn {
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.cards .price {
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+
+.cards .solded-price {
+  text-decoration: line-through;
+  font-size: 1.4rem;
+  margin-left: 70px;
+  color: rgb(184, 184, 184);
+}
+
+footer {
+  background: #808080;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1500px) {
+  main {
+    width: 80%;
+    margin: auto;
+    padding: 30px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  main {
+    width: 80%;
+    margin: auto;
+    padding: 30px 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  main {
+    width: 85%;
+    padding: 10px 10px;
+    display: grid;
+  }
+}
